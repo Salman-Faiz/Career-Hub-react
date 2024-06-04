@@ -15,7 +15,7 @@ const JobCategories = () => {
            
                 <div className='text-center space-y-3'>
                     <h2 className=' text-5xl font-bold'>Job Category list</h2>
-                    <p className='text-slate-600 pt-6'>Explore thousands of job opportunities with all the information you need. Its your future</p>
+                    <p className='text-slate-600 pt-6 text-xl font-medium'>Explore thousands of job opportunities with all the information you need. Its your future</p>
                 </div>
                 <div  className='py-10 grid grid-cols-4 gap-5 px-28'>
                     {

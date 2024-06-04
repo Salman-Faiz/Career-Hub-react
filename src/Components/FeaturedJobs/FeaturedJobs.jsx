@@ -12,7 +12,7 @@ const FeaturedJobs = () => {
         <div>
             <div className="text-center py-10">
                 <h2 className="text-5xl font-bold">Featured Job</h2>
-                <p className="text-slate-500 py-6">Explore thousands of job opportunities with all the information you need. Its your future</p>
+                <p className="text-slate-500 py-6 text-xl font-medium">Explore thousands of job opportunities with all the information you need. Its your future</p>
             </div>
             <div className="grid md:grid-cols-2 gap-5 px-28">
                 {
