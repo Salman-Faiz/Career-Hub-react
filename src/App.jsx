@@ -1,3 +1,5 @@
+import Footer from "./Components/Footer/Footer"
+import Header from "./Components/Header/Header"
 
 
 function App() {
@@ -5,9 +7,9 @@ function App() {
 
   return (
     <>
-
-      <h1>Vite + React</h1>
- 
+      <Header></Header>
+      <h1>Career Hub</h1>
+      <Footer></Footer>
     </>
   )
 }
