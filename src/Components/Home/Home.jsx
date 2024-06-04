@@ -1,5 +1,7 @@
 import BannerPic from "../BannerPic/BannerPic";
-import FeaturedJob from "../FeaturedJob/FeaturedJob";
+import FeaturedJobs from "../FeaturedJobs/FeaturedJobs";
+import JobCategories from "../JobCategoris/JobCategories";
+
 import JobCategoryList from "../JobCategoryList/JobCategoryList";
 
 
@@ -7,8 +9,8 @@ const Home = () => {
     return (
         <div>
             <BannerPic></BannerPic>
-            <JobCategoryList></JobCategoryList>
-            <FeaturedJob></FeaturedJob>
+            <JobCategories></JobCategories>
+            <FeaturedJobs></FeaturedJobs>
         </div>
     );
 };
