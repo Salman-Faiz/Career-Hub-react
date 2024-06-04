@@ -3,6 +3,7 @@
 import { Outlet } from "react-router-dom";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
+import JobCategories from "../JobCategoris/JobCategories";
 
 
 
@@ -12,7 +13,7 @@ const Root = () => {
   <Header></Header>
      
     <div>
-    
+    <JobCategories></JobCategories>
     <Outlet></Outlet>
     </div>
     
