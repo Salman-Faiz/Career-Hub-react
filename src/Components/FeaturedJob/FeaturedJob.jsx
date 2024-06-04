@@ -26,7 +26,7 @@ const FeaturedJob = () => {
                     <p>Salary : 100k-150k</p>
                 </div>
                 </div>
-                <button className="bg-violet-500 rounded-lg px-3 py-2 text-white text-2xl">View details</button>
+                <button className="bg-gradient-to-r from-indigo-400 to-violet-600 rounded-lg px-3 py-2 text-white text-2xl">View details</button>
             </div>
             <div className="space-y-3 border-2 rounded-lg ps-6 py-6">
                 <img src="/public/assets/logo/netflix.png" alt="" />
@@ -46,7 +46,7 @@ const FeaturedJob = () => {
                     <p>Salary : 100k-150k</p>
                 </div>
                 </div>
-                <button className="bg-violet-500 rounded-lg px-3 py-2 text-white text-2xl">View details</button>
+                <button className="bg-gradient-to-r from-indigo-400 to-violet-600 rounded-lg px-3 py-2 text-white text-2xl">View details</button>
             </div>
             <div className="space-y-3 border-2 rounded-lg ps-6 py-6">
                 <img src="/public/assets/logo/tesla.png" alt="" />
@@ -57,7 +57,7 @@ const FeaturedJob = () => {
                     <h3 className="border-2  border-violet-400  px-3 rounded-lg py-2 text-xl">Full Time</h3>
                 </div>
                 
-                <div className="flex space-x-3 flex-grow">
+                <div className="flex space-x-3 ">
                 <div className="flex space-x-1">
                     <img src="/public/assets/icons/location2.png" alt="" />
                     <p>Dhaka , Bangladesh</p>
@@ -67,7 +67,7 @@ const FeaturedJob = () => {
                     <p>Salary : 100k-150k</p>
                 </div>
                 </div>
-                <button className="bg-violet-500 rounded-lg px-3 py-2 text-white text-2xl">View details</button>
+                <button className=" bg-gradient-to-r from-indigo-400 to-violet-600 rounded-lg px-3 py-2 text-white text-2xl">View details</button>
               
             </div>
 
@@ -89,11 +89,11 @@ const FeaturedJob = () => {
                     <p>Salary : 100k-150k</p>
                 </div>
                 </div>
-                <button className="bg-violet-500 rounded-lg px-3 py-2 text-white text-2xl">View details</button>
+                <button className="bg-gradient-to-r from-indigo-400 to-violet-600 rounded-lg px-3 py-2 text-white text-2xl">View details</button>
             </div>
            </div>
-          <div className="text-center py-6">
-          <button className="bg-violet-500 px-3 py-2 rounded-lg text-white text-2xl">See All Jobs</button>
+          <div className="text-center pt-6 pb-20">
+          <button className="bg-gradient-to-r from-indigo-400 to-violet-600 px-3 py-2 rounded-lg text-white text-2xl">See All Jobs</button>
           </div>
             
         </div>
