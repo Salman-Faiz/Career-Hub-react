@@ -17,7 +17,7 @@ const JobCategories = () => {
                     <h2 className=' text-5xl font-bold'>Job Category list</h2>
                     <p className='text-slate-600 pt-6 text-xl font-medium'>Explore thousands of job opportunities with all the information you need. Its your future</p>
                 </div>
-                <div  className='py-10 grid md:grid-cols-4 gap-5 px-28'>
+                <div  className='py-10 grid md:grid-cols-4 gap-5 '>
                     {
                     jobs.map(job => <JobCategoryList job={job}></JobCategoryList>)
                 }

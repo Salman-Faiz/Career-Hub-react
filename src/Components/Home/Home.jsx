@@ -9,13 +9,13 @@ const Home = () => {
     return (
         <div >
             <div className=" bg-violet-50">
-                <div className="container mx-auto">
+                <div className="max-w-7xl mx-auto">
                     <Header></Header>
                     <BannerPic></BannerPic>
                 </div>
 
             </div>
-            <div className="container mx-auto">
+            <div className="max-w-7xl mx-auto">
                 <JobCategories></JobCategories>
             <FeaturedJobs></FeaturedJobs>
             </div>
