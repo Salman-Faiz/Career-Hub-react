@@ -3,6 +3,8 @@ import FeaturedJob from '../FeaturedJob/FeaturedJob';
 
 const FeaturedJobs = () => {
     const [featuredJobs, setFeaturedJobs] = useState([]);
+    // this is not recommended process to show only 4 data.. we will use pagination later.
+    const [dataLength,setDataLength] = useState(4);
     useEffect(() => {
         fetch('/public/data/jobs.json')
             .then(res => res.json())
@@ -16,11 +18,13 @@ const FeaturedJobs = () => {
             </div>
             <div className="grid md:grid-cols-2 gap-5">
                 {
-                    featuredJobs.map(featuredJob => <FeaturedJob featuredJob={featuredJob}></FeaturedJob>)
+                    featuredJobs.slice(0,dataLength).map(featuredJob => <FeaturedJob featuredJob={featuredJob}></FeaturedJob>)
                 }
             </div>
             <div className="text-center pt-6 pb-20">
-                <button className="bg-gradient-to-r from-indigo-400 to-violet-600 px-3 py-2 rounded-lg text-white text-2xl">See All Jobs</button>
+               <div className={dataLength === featuredJobs.length ? 'hidden' : ''}>
+               <button onClick={()=>{setDataLength(featuredJobs.length)}} className="bg-gradient-to-r from-indigo-400 to-violet-600 px-3 py-2 rounded-lg text-white text-2xl">See All Jobs</button>
+               </div>
             </div>
         </div>
     );
