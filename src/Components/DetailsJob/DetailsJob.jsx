@@ -1,6 +1,9 @@
 import { useLoaderData, useParams } from "react-router-dom";
+
 import Header from "../Header/Header";
 import Blogs from './../Blogs/Blogs';
+import { FaDollarSign, FaBox,FaPhone,FaAddressBook } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 
 const DetailsJob = () => {
@@ -37,16 +40,23 @@ const DetailsJob = () => {
                         <hr className="border-2" />
 
                         <div className="text-xl space-y-3">
-                            <p className="">Salary : {salary}</p>
-                            <p className="">Job Title : {job_title}</p>
+                            <div className="flex gap-1 ">
+                            <FaDollarSign  className=" text-3xl"/>
+                            <p><span className="font-semibold">Salary :</span> {salary}</p>    
+                            </div>
+                           <div className="flex gap-2">
+                           <FaBox className="text-2xl"></FaBox>
+                            <p className=""><span className="font-semibold">Job Title :</span> {job_title}</p>
+                           </div>
                         </div>
 
 
                         <p className="py-5 text-2xl font-bold">Contact information</p>
                         <div className="text-xl space-y-3">
                             <hr className="border-2 " />
-                            <p className="">Email : {contact_information.email}</p>
-                            <p className="">address : {contact_information.address}</p>
+                            <p className="flex gap-2" ><FaPhone className="text-2xl"></FaPhone><span className="font-semibold">phone :</span> {contact_information.phone}</p>
+                            <p className="flex gap-2"><MdEmail className="text-2xl"></MdEmail><span className="font-semibold">Email :</span> {contact_information.email}</p>
+                            <p className="flex gap-2"><FaAddressBook className="text-3xl"></FaAddressBook><span className="font-semibold">Address :</span> {contact_information.address}</p>
 
 
                         </div>
