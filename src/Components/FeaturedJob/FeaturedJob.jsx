@@ -24,6 +24,7 @@ const FeaturedJob = ({ featuredJob }) => {
                     <p>Salary : {salary}</p>
                 </div>
             </div>
+            <button className="bg-gradient-to-r from-indigo-400 to-violet-600 px-3 py-2 rounded-lg text-white font-semibold text-xl">View Details</button>
         </div>
     );
 };
