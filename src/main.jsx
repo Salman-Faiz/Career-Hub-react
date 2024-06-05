@@ -10,6 +10,7 @@ import Root from './Components/Root/Root.jsx';
 import Home from './Components/Home/Home.jsx';
 import AppliedJobs from './Components/AppliedJobs/AppliedJobs.jsx';
 import Blogs from './Components/Blogs/Blogs.jsx';
+import DetailsJob from './Components/DetailsJob/DetailsJob.jsx';
 
 const router = createBrowserRouter([
   {
@@ -28,13 +29,18 @@ const router = createBrowserRouter([
         path: "/blogs",
         element: <Blogs></Blogs>,
       },
+      {
+        path: "/jobs/:id",
+        element: <DetailsJob></DetailsJob>,
+        loader: ({params}) => fetch(`../public/data/jobs.json`),
+      },
     ],
   },
- 
+
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-   <RouterProvider router={router} />
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )

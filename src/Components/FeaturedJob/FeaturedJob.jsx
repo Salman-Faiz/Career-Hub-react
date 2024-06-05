@@ -1,7 +1,8 @@
+import { Link } from "react-router-dom";
 
 
 const FeaturedJob = ({ featuredJob }) => {
-    const { logo, job_title, company_name, remote_or_onsite, job_type, location, salary } = featuredJob;
+    const {id, logo, job_title, company_name, remote_or_onsite, job_type, location, salary } = featuredJob;
     return (
 
 
@@ -24,7 +25,9 @@ const FeaturedJob = ({ featuredJob }) => {
                     <p>Salary : {salary}</p>
                 </div>
             </div>
-            <button className="bg-gradient-to-r from-indigo-400 to-violet-600 px-3 py-2 rounded-lg text-white font-semibold text-xl">View Details</button>
+        <div>
+        <Link to={`/jobs/${id}`}>  <button className="bg-gradient-to-r from-indigo-400 to-violet-600 px-3 py-2 rounded-lg text-white font-semibold text-xl">View Details</button></Link>
+        </div>
         </div>
     );
 };

@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 const Header = () => {
     return (
-        <div className='max-w-7xl'>
+        <div className='max-w-7xl mx-auto'>
             <div className="navbar  mb-8 pt-8 ">
             <div className="navbar-start">
                 <div className="dropdown">
