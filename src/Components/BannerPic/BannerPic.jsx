@@ -9,7 +9,7 @@ const BannerPic = () => {
                 <p className='text-2xl py-4 text-slate-500 text-wrap'>Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish</p>
                 <button className='bg-gradient-to-r from-indigo-400 to-violet-600 text-white text-3xl rounded-lg px-4 py-2'>Get Started</button>
             </div>
-            <div><img src="/public/assets/images/user.png" alt="" /></div>
+            <div className=''><img src="https://i.postimg.cc/J098KKN2/user.png" alt="" /></div>
         </div>
     
     );

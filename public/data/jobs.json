@@ -1,7 +1,7 @@
 [
      {
       "id": 1,
-      "logo": "/public/assets/logo/google.png",
+      "logo": "https://techcrunch.com/wp-content/uploads/2012/12/google-logo1.jpg?w=1024",
       "job_title": "Technical Database Engineer",
       "company_name": "Google LLC",
       "remote_or_onsite": "Remote",
@@ -20,7 +20,7 @@
     },
     {
         "id": 2,
-        "logo": "/public/assets/logo/netflix.png",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmUo2nZHDQPSF3vGwsETiT4uMNmMr4RmCIIg&s",
         "job_title": "Senior Product Designer",
         "company_name": "Netflix",
         "remote_or_onsite": "Onsite",
@@ -39,7 +39,7 @@
       },
       {
         "id": 3,
-        "logo": "/public/assets/logo/tesla.png",
+        "logo": "https://i.ebayimg.com/images/g/bfUAAOSw88RbDbfe/s-l400.jpg",
         "job_title": "Software Engineer",
         "company_name": "Tesla",
         "remote_or_onsite": "Onsite",
@@ -58,7 +58,7 @@
       },
       {
         "id": 4,
-        "logo": "/public/assets/logo/airbnb.png",
+        "logo": "https://www.stratosjets.com/wp-content/uploads/2020/05/airbnb-statistics-640x430.jpg",
         "job_title": "Software Engineer",
         "company_name": "Google LLC",
         "remote_or_onsite": "Onsite",
@@ -77,7 +77,7 @@
       },
       {
         "id": 5,
-        "logo": "/public/assets/logo/airbnb.png",
+        "logo": "https://i.ebayimg.com/images/g/bfUAAOSw88RbDbfe/s-l400.jpg",
         "job_title": "Technical Database Engineer",
         "company_name": "Tesla",
         "remote_or_onsite": "Remote",
@@ -96,7 +96,7 @@
       },
       {
         "id": 6,
-        "logo": "/public/assets/logo/netflix.png",
+        "logo": "https://www.stratosjets.com/wp-content/uploads/2020/05/airbnb-statistics-640x430.jpg",
         "job_title": "Senior Product Designer",
         "company_name": "Netflix",
         "remote_or_onsite": "Remote",

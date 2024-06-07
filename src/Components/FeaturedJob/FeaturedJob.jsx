@@ -8,7 +8,7 @@ const FeaturedJob = ({ featuredJob }) => {
 
 
         <div className="space-y-3 border-2 rounded-lg ps-6 py-6">
-            <img src={logo} alt="" />
+            <img className="w-56" src={logo} alt="" />
             <h2 className="text-2xl font-semibold text-slate-600">{job_title}</h2>
             <h5 className="text-2xl text-slate-400">{company_name}</h5>
             <div className="flex text-xl gap-4 ">

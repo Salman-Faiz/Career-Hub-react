@@ -5,7 +5,7 @@ const AppliedJob = ({appliedJob}) => {
     return (
         <div className="flex gap-10 border border-gray-400 p-6 mb-5 rounded-xl">
            <div className=" w-44 bg-violet-200 rounded-lg">
-           <div className="px-8 py-20">
+           <div className="px-6 py-16">
            <img className="" src={logo} alt="" />
            </div>
            </div>
