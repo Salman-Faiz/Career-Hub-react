@@ -12,12 +12,10 @@ const Root = () => {
     return (
         <>
             <div >
-
                 <Outlet></Outlet>
+                <Footer></Footer>
+
             </div>
-
-
-            <Footer></Footer>
         </>
 
 
