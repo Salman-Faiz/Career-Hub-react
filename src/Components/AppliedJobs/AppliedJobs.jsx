@@ -1,34 +1,31 @@
-import React, { useEffect, useState } from 'react';
-import Header from '../Header/Header';
+
 import { useLoaderData } from 'react-router-dom';
+import Header from '../Header/Header';
 import { getStoredDataFromLS } from '../../Utility/LocalStorage';
+import { useEffect, useState } from 'react';
+import AppliedJob from '../AppliedJob/AppliedJob';
+
 
 const AppliedJobs = () => {
-    // const [appliedJob, setAppliedJob] = useState([]);
-    // const jobs = useLoaderData();
-    // useEffect(()=>{
-    //     const storedJobIds = getStoredDataFromLS();
-    //     if(jobs){
-    //         // const jobApplied= jobs.filter(job => storedJobIds.includes(job.id));
-    //         // console.log(jobApplied)
-    //         // setAppliedJob(jobApplied);
-    //         const jobApplied =[];
-    //         for( const id of storedJobIds){
-    //             const job = jobs.find(job=> job.id === id);
-    //             if(job){
-    //                 jobApplied.push(job);
-    //             }
-    //         }
-    //         console.log(jobs)
-    //         setAppliedJob(jobApplied);
-    //     }
+    const [appliedJobs, setAppliedJobs] = useState([]);
+    const jobs = useLoaderData();
 
-        
-    // },[])
+    useEffect(() => {
+        const storedIds = getStoredDataFromLS();
+        const jobApplied = jobs.filter(job => storedIds.includes(job.id));
+        setAppliedJobs(jobApplied);
+        console.log(jobs, storedIds, jobApplied);
+        console.log(appliedJobs.length);
+    }, [])
     return (
         <div className='max-w-7xl mx-auto'>
             <Header></Header>
-           {/* <h4> {appliedJob.length}</h4> */}
+        
+       <div className=''>
+       {
+            appliedJobs.map(appliedJob => <AppliedJob appliedJob={appliedJob}></AppliedJob> )
+        }
+       </div>
         </div>
     );
 };
