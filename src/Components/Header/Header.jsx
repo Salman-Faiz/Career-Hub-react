@@ -27,7 +27,8 @@ const Header = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn bg-gradient-to-r from-indigo-400 to-violet-600 text-white text-xl">Start Applying</a>
+                <button className="btn bg-gradient-to-r from-indigo-400 to-violet-600 text-white text-xl"><NavLink to={'/login'}>Log In</NavLink></button>
+                <button className="btn bg-gradient-to-r from-indigo-400 to-violet-600 text-white text-xl"><NavLink to={'/register'}>Register</NavLink></button>
             </div>
         </div>
         </div>

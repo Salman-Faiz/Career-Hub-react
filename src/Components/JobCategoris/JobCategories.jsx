@@ -19,7 +19,7 @@ const JobCategories = () => {
                 </div>
                 <div  className='py-10 grid md:grid-cols-4 gap-5 '>
                     {
-                    jobs.map(job => <JobCategoryList job={job}></JobCategoryList>)
+                    jobs.map((job,idx) => <JobCategoryList key={idx} job={job}></JobCategoryList>)
                 }
                 </div>
                 

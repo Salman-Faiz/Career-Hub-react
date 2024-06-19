@@ -1,6 +1,7 @@
 import React from 'react';
 
 const JobCategoryList = ({ job }) => {
+    console.log(job)
     const { logo, id, category_name, availability } = job;
     return (
         <div className='ps-10 py-6 bg-violet-50 rounded-lg'>

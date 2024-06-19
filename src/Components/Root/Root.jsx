@@ -13,9 +13,10 @@ const Root = () => {
         <>
             <div >
                 <Outlet></Outlet>
+                </div>
                 <Footer></Footer>
 
-            </div>
+            
         </>
 
 
