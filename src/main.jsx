@@ -1,6 +1,6 @@
 import React, { Children } from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+
 import './index.css'
 import {
   createBrowserRouter,
@@ -14,6 +14,8 @@ import DetailsJob from './Components/DetailsJob/DetailsJob.jsx';
 import Login from './Components/Login/Login.jsx';
 import Register from './Components/Register/Register.jsx';
 
+
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -26,7 +28,7 @@ const router = createBrowserRouter([
       {
         path: "/appliedJob",
         element: <AppliedJobs></AppliedJobs>,
-        loader :()=>fetch(`../public/data/jobs.json`),
+        loader :()=>fetch(`/public/data/jobs.json`),
       },
       {
         path: "/blogs",
@@ -35,7 +37,7 @@ const router = createBrowserRouter([
       {
         path: "/jobs/:id",
         element: <DetailsJob></DetailsJob>,
-        loader: ({}) => fetch(`../public/data/jobs.json`),  // do not load all data,load data only what you need....
+        loader: ({}) => fetch(`/public/data/jobs.json`),  // do not load all data,load data only what you need....
         
       },
       {
